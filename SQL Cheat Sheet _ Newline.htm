@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<!-- saved from url=(0066)https://newline.theironyard.com/paths/584/units/3919/lessons/15885 -->
+<html lang="en" class="wf-sourcecodepro-n4-active wf-brandongrotesque-n5-active wf-lato-n7-active wf-lato-n4-active wf-lato-n6-active wf-fftisaweb-i4-active wf-fftisaweb-n4-active wf-fftisaweb-n3-active wf-fftisasansweb-n7-active wf-fftisasansweb-n3-active wf-fftisasansweb-n5-active wf-sourcecodepro-n6-active wf-fftisasansweb-i5-active wf-fftisasansweb-n4-active wf-active wf-brandongrotesque-n4-active wf-brandongrotesque-i4-active wf-brandongrotesque-n7-active wf-brandongrotesque-i7-active wf-lato-i4-active wf-lato-i7-active wf-lato-n5-active wf-lato-i6-active"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style id="stndz-style"></style>
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="csrf-param" content="authenticity_token">
+<meta name="csrf-token" content="KBp+xiqd9f889yvoW3qICMZ6WamUjD/DDmjgPvZ+UxjcNLLkjwP3gUGtvYM/BsvvYov4JydZh3CD1qeLqRxw6g==">
+<title>SQL Cheat Sheet | Newline</title>
+<!-- For non-Retina (@1× display) iPhone, iPod Touch, and Android 2.1+ devices: -->
+<link rel="apple-touch-icon-precomposed" href="https://tiy-newline-production-herokuapp-com.global.ssl.fastly.net/assets/apple-touch-icon-precomposed-035b5ddea3811781ede5cbe90fef2aeccc9c7383c7c51ee9342d27a8e74a5d5b.png"><!-- 57×57px -->
+<!-- For the iPad mini and the first- and second-generation iPad (@1× display) on iOS ≤ 6: -->
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="https://tiy-newline-production-herokuapp-com.global.ssl.fastly.net/assets/apple-touch-icon-72x72-precomposed-7af764c0d4ab020e64f5d7cd799511674f71b3e6f118c85465659e89049f28c6.png">
+<!-- For the iPad mini and the first- and second-generation iPad (@1× display) on iOS ≥ 7: -->
+<link rel="apple-touch-icon-precomposed" sizes="76x76" href="https://tiy-newline-production-herokuapp-com.global.ssl.fastly.net/assets/apple-touch-icon-76x76-precomposed-43bed12a7b237105abb17bc332d0d219be37d76eb7fe0f7998d21c00d3235627.png">
+<!-- For iPhone with @2× display running iOS ≤ 6: -->
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="https://tiy-newline-production-herokuapp-com.global.ssl.fastly.net/assets/apple-touch-icon-114x114-precomposed-26e24f417f3c8a04cf2347b74158fa5524b64ea3408e654f191a8d9d183b5a0c.png">
+<!-- For iPhone with @2× display running iOS ≥ 7: -->
+<link rel="apple-touch-icon-precomposed" sizes="120x120" href="https://tiy-newline-production-herokuapp-com.global.ssl.fastly.net/assets/apple-touch-icon-120x120-precomposed-bd559e5c9c06234e50a97b4a17a749b0b4964cff879f55caf7cd610050d8902b.png">
+<!-- For iPad with @2× display running iOS ≤ 6: -->
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://tiy-newline-production-herokuapp-com.global.ssl.fastly.net/assets/apple-touch-icon-144x144-precomposed-e83542afd77bafa8762d3d7b7e399b1bd9d841ea6c0ca80911007bb35285c17f.png">
+<!-- For iPad with @2× display running iOS ≥ 7: -->
+<link rel="apple-touch-icon-precomposed" sizes="152x152" href="https://tiy-newline-production-herokuapp-com.global.ssl.fastly.net/assets/apple-touch-icon-152x152-precomposed-e42202b1dadb2f72d9670d863c2812eda2320ac166191313f53961817e395c67.png">
+<!-- For iPhone 6 Plus with @3× display: -->
+<link rel="apple-touch-icon-precomposed" sizes="180x180" href="https://tiy-newline-production-herokuapp-com.global.ssl.fastly.net/assets/apple-touch-icon-180x180-precomposed-4db11e1681694b0f08b9cf7af37746c61b642546d12b922b27dde6a7a9b452dd.png">
+<!-- For Chrome for Android: -->
+<link rel="icon" sizes="192x192" href="https://tiy-newline-production-herokuapp-com.global.ssl.fastly.net/assets/touch-icon-192x192-3f94a8b799ba9b1a2b14957a5c15f39a7892425f6f227cd6319f560ce7f685a9.png">
+<!-- Favicon -->
+<link rel="shortcut icon" type="image/x-icon" href="https://tiy-newline-production-herokuapp-com.global.ssl.fastly.net/assets/favicon-77ee7ce61d8b909af9f0775490ee1953843bd1cda601ee32845e2bd2a27833a4.ico">
+
+
+    <script type="text/javascript" async="" src="./SQL Cheat Sheet _ Newline_files/j8ejkfhu"></script><script src="./SQL Cheat Sheet _ Newline_files/2153290.js" type="text/javascript" id="hs-analytics" data-loader="hs-scriptloader"></script><script src="./SQL Cheat Sheet _ Newline_files/2153290(1).js" type="text/javascript" id="messages-2153290" data-loader="hs-scriptloader"></script><script async="" src="https://static.ads-twitter.com/uwt.js"></script><script src="./SQL Cheat Sheet _ Newline_files/792921264167656" async=""></script><script async="" src="./SQL Cheat Sheet _ Newline_files/fbevents.js"></script><script type="text/javascript" async="" src="./SQL Cheat Sheet _ Newline_files/conversion_async.js"></script><script type="text/javascript" async="" src="./SQL Cheat Sheet _ Newline_files/analytics.js"></script><script async="" src="./SQL Cheat Sheet _ Newline_files/gtm.js"></script><script src="./SQL Cheat Sheet _ Newline_files/kdv5rqx.js"></script>
+  <style type="text/css">@font-face{font-family:ff-tisa-web;src:url(https://use.typekit.net/af/f87f2c/000000000000000000016c18/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3) format("woff2"),url(https://use.typekit.net/af/f87f2c/000000000000000000016c18/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3) format("woff"),url(https://use.typekit.net/af/f87f2c/000000000000000000016c18/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3) format("opentype");font-weight:400;font-style:italic;}@font-face{font-family:ff-tisa-web;src:url(https://use.typekit.net/af/2d229a/000000000000000000016c1f/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3) format("woff2"),url(https://use.typekit.net/af/2d229a/000000000000000000016c1f/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3) format("woff"),url(https://use.typekit.net/af/2d229a/000000000000000000016c1f/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3) format("opentype");font-weight:400;font-style:normal;}@font-face{font-family:ff-tisa-web;src:url(https://use.typekit.net/af/3c82ff/000000000000000000016c19/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n3&v=3) format("woff2"),url(https://use.typekit.net/af/3c82ff/000000000000000000016c19/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n3&v=3) format("woff"),url(https://use.typekit.net/af/3c82ff/000000000000000000016c19/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n3&v=3) format("opentype");font-weight:300;font-style:normal;}@font-face{font-family:ff-tisa-sans-web;src:url(https://use.typekit.net/af/4141df/000000000000000000017264/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3) format("woff2"),url(https://use.typekit.net/af/4141df/000000000000000000017264/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3) format("woff"),url(https://use.typekit.net/af/4141df/000000000000000000017264/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3) format("opentype");font-weight:700;font-style:normal;}@font-face{font-family:ff-tisa-sans-web;src:url(https://use.typekit.net/af/de2599/00000000000000000001725e/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n3&v=3) format("woff2"),url(https://use.typekit.net/af/de2599/00000000000000000001725e/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n3&v=3) format("woff"),url(https://use.typekit.net/af/de2599/00000000000000000001725e/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n3&v=3) format("opentype");font-weight:300;font-style:normal;}@font-face{font-family:ff-tisa-sans-web;src:url(https://use.typekit.net/af/2088d9/000000000000000000017262/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n5&v=3) format("woff2"),url(https://use.typekit.net/af/2088d9/000000000000000000017262/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n5&v=3) format("woff"),url(https://use.typekit.net/af/2088d9/000000000000000000017262/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n5&v=3) format("opentype");font-weight:500;font-style:normal;}@font-face{font-family:ff-tisa-sans-web;src:url(https://use.typekit.net/af/e92590/000000000000000000017263/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i5&v=3) format("woff2"),url(https://use.typekit.net/af/e92590/000000000000000000017263/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i5&v=3) format("woff"),url(https://use.typekit.net/af/e92590/000000000000000000017263/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i5&v=3) format("opentype");font-weight:500;font-style:italic;}@font-face{font-family:ff-tisa-sans-web;src:url(https://use.typekit.net/af/38ec2b/000000000000000000017260/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3) format("woff2"),url(https://use.typekit.net/af/38ec2b/000000000000000000017260/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3) format("woff"),url(https://use.typekit.net/af/38ec2b/000000000000000000017260/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3) format("opentype");font-weight:400;font-style:normal;}@font-face{font-family:source-code-pro;src:url(https://use.typekit.net/af/f5156b/0000000000000000000179cf/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3) format("woff2"),url(https://use.typekit.net/af/f5156b/0000000000000000000179cf/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3) format("woff"),url(https://use.typekit.net/af/f5156b/0000000000000000000179cf/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3) format("opentype");font-weight:400;font-style:normal;}@font-face{font-family:source-code-pro;src:url(https://use.typekit.net/af/67c5f9/0000000000000000000179d3/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n6&v=3) format("woff2"),url(https://use.typekit.net/af/67c5f9/0000000000000000000179d3/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n6&v=3) format("woff"),url(https://use.typekit.net/af/67c5f9/0000000000000000000179d3/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n6&v=3) format("opentype");font-weight:600;font-style:normal;}</style><script>try{Typekit.load({ async: false });}catch(e){}</script>
+  <script src="./SQL Cheat Sheet _ Newline_files/arw8rqv.js"></script>
+  <style type="text/css">@font-face{font-family:brandon-grotesque;src:url(https://use.typekit.net/af/15b9aa/0000000000000000000132df/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3) format("woff2"),url(https://use.typekit.net/af/15b9aa/0000000000000000000132df/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3) format("woff"),url(https://use.typekit.net/af/15b9aa/0000000000000000000132df/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3) format("opentype");font-weight:400;font-style:normal;}@font-face{font-family:brandon-grotesque;src:url(https://use.typekit.net/af/8f92f2/0000000000000000000132e0/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3) format("woff2"),url(https://use.typekit.net/af/8f92f2/0000000000000000000132e0/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3) format("woff"),url(https://use.typekit.net/af/8f92f2/0000000000000000000132e0/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3) format("opentype");font-weight:400;font-style:italic;}@font-face{font-family:brandon-grotesque;src:url(https://use.typekit.net/af/b0d035/0000000000000000000132e3/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3) format("woff2"),url(https://use.typekit.net/af/b0d035/0000000000000000000132e3/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3) format("woff"),url(https://use.typekit.net/af/b0d035/0000000000000000000132e3/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3) format("opentype");font-weight:700;font-style:normal;}@font-face{font-family:brandon-grotesque;src:url(https://use.typekit.net/af/fc7374/0000000000000000000132e4/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3) format("woff2"),url(https://use.typekit.net/af/fc7374/0000000000000000000132e4/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3) format("woff"),url(https://use.typekit.net/af/fc7374/0000000000000000000132e4/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3) format("opentype");font-weight:700;font-style:italic;}@font-face{font-family:brandon-grotesque;src:url(https://use.typekit.net/af/6af1b3/0000000000000000000132e1/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n5&v=3) format("woff2"),url(https://use.typekit.net/af/6af1b3/0000000000000000000132e1/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n5&v=3) format("woff"),url(https://use.typekit.net/af/6af1b3/0000000000000000000132e1/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n5&v=3) format("opentype");font-weight:500;font-style:normal;}@font-face{font-family:lato;src:url(https://use.typekit.net/af/ae88c5/00000000000000000001522d/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3) format("woff2"),url(https://use.typekit.net/af/ae88c5/00000000000000000001522d/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3) format("woff"),url(https://use.typekit.net/af/ae88c5/00000000000000000001522d/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3) format("opentype");font-weight:400;font-style:italic;}@font-face{font-family:lato;src:url(https://use.typekit.net/af/5a991d/000000000000000000015232/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3) format("woff2"),url(https://use.typekit.net/af/5a991d/000000000000000000015232/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3) format("woff"),url(https://use.typekit.net/af/5a991d/000000000000000000015232/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3) format("opentype");font-weight:700;font-style:italic;}@font-face{font-family:lato;src:url(https://use.typekit.net/af/bbfd72/000000000000000000015231/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3) format("woff2"),url(https://use.typekit.net/af/bbfd72/000000000000000000015231/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3) format("woff"),url(https://use.typekit.net/af/bbfd72/000000000000000000015231/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3) format("opentype");font-weight:700;font-style:normal;}@font-face{font-family:lato;src:url(https://use.typekit.net/af/95fd5d/00000000000000000001522c/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3) format("woff2"),url(https://use.typekit.net/af/95fd5d/00000000000000000001522c/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3) format("woff"),url(https://use.typekit.net/af/95fd5d/00000000000000000001522c/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3) format("opentype");font-weight:400;font-style:normal;}@font-face{font-family:lato;src:url(https://use.typekit.net/af/7935cf/00000000000000000001522e/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n5&v=3) format("woff2"),url(https://use.typekit.net/af/7935cf/00000000000000000001522e/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n5&v=3) format("woff"),url(https://use.typekit.net/af/7935cf/00000000000000000001522e/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n5&v=3) format("opentype");font-weight:500;font-style:normal;}@font-face{font-family:lato;src:url(https://use.typekit.net/af/b17a3f/000000000000000000015226/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n6&v=3) format("woff2"),url(https://use.typekit.net/af/b17a3f/000000000000000000015226/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n6&v=3) format("woff"),url(https://use.typekit.net/af/b17a3f/000000000000000000015226/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n6&v=3) format("opentype");font-weight:600;font-style:normal;}@font-face{font-family:lato;src:url(https://use.typekit.net/af/f5fdbc/000000000000000000015230/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i6&v=3) format("woff2"),url(https://use.typekit.net/af/f5fdbc/000000000000000000015230/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i6&v=3) format("woff"),url(https://use.typekit.net/af/f5fdbc/000000000000000000015230/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i6&v=3) format("opentype");font-weight:600;font-style:italic;}</style><script>try{Typekit.load({ false: true });}catch(e){}</script>
+
+  <link rel="stylesheet" media="screen" href="./SQL Cheat Sheet _ Newline_files/library.manifest-7190bb914662442c854d94bfa2c28de1e90823988740443048620f93349fe5c4.css">
+
+  <button data-open="push-menu" class="l-header-hamburger md-hide lg-hide"></button>
+</div>
+
+            <div class="m-lessonheader bg-pattern color-white bg-slategrey">
+
+  <h1 class="m-lessonheader-title">SQL Cheat Sheet</h1>
+  <span class="m-lessonheader-label">
+    Lesson
+
+  </span>
+  <div class="m-lessonheader-meta">
+    <div class="m-lessonheader-meta-color" style="background: #e65656">&nbsp;</div>
+    <div class="m-lessonheader-meta-item">
+      Path:
+      <a href="https://newline.theironyard.com/paths/584">Backend Engineering (Ruby on Rails) - September 2016</a>
+    </div>
+    <div class="m-lessonheader-meta-item">
+      Unit:
+      Week 5: Databases, SQL and ActiveRecord
+    </div>
+  </div>
+
+</div>
+
+
+      </header>
+      <section class="l-content ">
+
+
+<div class="bg-white">
+  <div class="max-width-2 mx-auto px2 pt2">
+    <div class="clearfix pt3 pb4">
+      <article class="m-lessoncontent" data-source-gid="BAh7CEkiCGdpZAY6BkVUSSIfZ2lkOi8vbmV3bGluZS9MZXNzb24vMTU4ODUGOwBUSSIMcHVycG9zZQY7AFRJIgxkZWZhdWx0BjsAVEkiD2V4cGlyZXNfYXQGOwBUSSIdMjAxNy0wNy0yN1QxMzo0NDoyMi45MTRaBjsAVA==--82fc998e37850d6daa9cd4e3ec340290e894cc25">
+        <h2>Standard SQL Statements</h2>
+<h4>SELECT</h4>
+<pre class="highlight sql"><span class="highlight-copy-clipboard hint--left hint--rounded hint--no-animate" data-hint="Copy Code"></span><code><span class="k">SELECT</span> <span class="n">last_name</span><span class="p">,</span><span class="n">first_name</span>
+<span class="err">&nbsp;</span> <span class="err">&nbsp;</span> <span class="err">&nbsp;</span> <span class="err">&nbsp;</span> <span class="k">FROM</span> <span class="n">students</span>
+<span class="err">&nbsp;</span> <span class="err">&nbsp;</span> <span class="err">&nbsp;</span> <span class="err">&nbsp;</span> <span class="k">WHERE</span> <span class="n">student_id</span> <span class="k">LIKE</span> <span class="s1">'%123%'</span><span class="p">;</span>
+</code></pre>
+<h4>INSERT</h4>
+<pre class="highlight sql"><span class="highlight-copy-clipboard hint--left hint--rounded hint--no-animate" data-hint="Copy Code"></span><code><span class="k">INSERT</span> <span class="k">INTO</span> <span class="n">students</span> <span class="k">VALUES</span>
+<span class="err">&nbsp;</span> <span class="err">&nbsp;</span> <span class="err">&nbsp;</span> <span class="err">&nbsp;</span> <span class="p">(</span><span class="s1">'Smith'</span><span class="p">,</span><span class="s1">'John'</span><span class="p">,</span><span class="mi">123456789</span><span class="p">,</span><span class="s1">'Math'</span><span class="p">,</span><span class="s1">'Selleck'</span><span class="p">);</span>
+</code></pre>
+<h4>INSERT SELECT</h4>
+<pre class="highlight sql"><span class="highlight-copy-clipboard hint--left hint--rounded hint--no-animate" data-hint="Copy Code"></span><code><span class="k">INSERT</span> <span class="k">INTO</span> <span class="n">students</span>
+<span class="err">&nbsp;</span> <span class="err">&nbsp;</span> <span class="err">&nbsp;</span> <span class="err">&nbsp;</span> <span class="p">(</span><span class="n">student_id</span><span class="p">,</span> <span class="n">first_name</span><span class="p">,</span> <span class="n">last_name</span><span class="p">)</span>
+<span class="err">&nbsp;</span> <span class="err">&nbsp;</span> <span class="err">&nbsp;</span> <span class="err">&nbsp;</span> <span class="k">SELECT</span> <span class="n">student_id</span><span class="p">,</span> <span class="n">first_name</span><span class="p">,</span> <span class="n">last_name</span><span class="err">&nbsp;</span>
+<span class="err">&nbsp;</span> <span class="err">&nbsp;</span> <span class="err">&nbsp;</span> <span class="err">&nbsp;</span> <span class="k">FROM</span> <span class="n">other_student_table</span><span class="p">;</span>
+<span class="err">&nbsp;</span> <span class="err">&nbsp;</span> <span class="err">&nbsp;</span> <span class="err">&nbsp;</span> <span class="k">WHERE</span> <span class="n">last_name</span> <span class="k">LIKE</span> <span class="s1">'%son'</span><span class="p">;</span>
+</code></pre>
+<h4>UPDATE</h4>
+<pre class="highlight sql"><span class="highlight-copy-clipboard hint--left hint--rounded hint--no-animate" data-hint="Copy Code"></span><code><span class="k">UPDATE</span> <span class="n">students</span> <span class="k">SET</span><span class="err">&nbsp;</span>
+<span class="err">&nbsp;</span> <span class="err">&nbsp;</span> <span class="err">&nbsp;</span> <span class="err">&nbsp;</span> <span class="n">last_name</span> <span class="o">=</span> <span class="s1">'Jones'</span>
+<span class="err">&nbsp;</span> <span class="err">&nbsp;</span> <span class="err">&nbsp;</span> <span class="err">&nbsp;</span> <span class="k">WHERE</span> <span class="n">student_id</span> <span class="o">=</span> <span class="mi">123</span><span class="p">;</span>
+</code></pre>
+<h4>DISTINCT</h4>
+<pre class="highlight sql"><span class="highlight-copy-clipboard hint--left hint--rounded hint--no-animate" data-hint="Copy Code"></span><code><span class="k">SELECT</span> <span class="k">DISTINCT</span> <span class="n">last_name</span>
+<span class="err">&nbsp;</span> <span class="err">&nbsp;</span> <span class="err">&nbsp;</span> <span class="err">&nbsp;</span> <span class="k">FROM</span> <span class="n">students</span><span class="p">;</span>
+</code></pre>
+<h4>ORDERING</h4>
+<pre class="highlight sql"><span class="highlight-copy-clipboard hint--left hint--rounded hint--no-animate" data-hint="Copy Code"></span><code><span class="k">SELECT</span> <span class="n">last_name</span><span class="p">,</span><span class="n">first_name</span>
+<span class="err">&nbsp;</span> <span class="err">&nbsp;</span> <span class="err">&nbsp;</span> <span class="err">&nbsp;</span> <span class="k">FROM</span> <span class="n">students</span>
+<span class="err">&nbsp;</span> <span class="err">&nbsp;</span> <span class="err">&nbsp;</span> <span class="err">&nbsp;</span> <span class="k">ORDER</span> <span class="k">BY</span> <span class="n">last_name</span><span class="p">,</span> <span class="n">first_name</span> <span class="k">DESC</span><span class="p">;</span>
+</code></pre>
+<h4>GROUP BY</h4>
+<pre class="highlight sql"><span class="highlight-copy-clipboard hint--left hint--rounded hint--no-animate" data-hint="Copy Code"></span><code><span class="k">SELECT</span> <span class="n">last_name</span><span class="p">,</span><span class="k">COUNT</span><span class="p">(</span><span class="o">*</span><span class="p">)</span>
+<span class="err">&nbsp;</span> <span class="err">&nbsp;</span> <span class="err">&nbsp;</span> <span class="err">&nbsp;</span> <span class="k">FROM</span> <span class="n">students</span>
+<span class="err">&nbsp;</span> <span class="err">&nbsp;</span> <span class="err">&nbsp;</span> <span class="err">&nbsp;</span> <span class="k">GROUP</span> <span class="k">BY</span> <span class="n">last_name</span><span class="p">;</span>
+</code></pre>
+<h4>LIKE</h4>
+<pre class="highlight sql"><span class="highlight-copy-clipboard hint--left hint--rounded hint--no-animate" data-hint="Copy Code"></span><code><span class="k">SELECT</span> <span class="n">last_name</span>
+<span class="err">&nbsp;</span> <span class="err">&nbsp;</span> <span class="err">&nbsp;</span> <span class="err">&nbsp;</span> <span class="k">FROM</span> <span class="n">students</span>
+<span class="err">&nbsp;</span> <span class="err">&nbsp;</span> <span class="err">&nbsp;</span> <span class="err">&nbsp;</span> <span class="k">WHERE</span> <span class="n">last_name</span> <span class="k">LIKE</span> <span class="s1">'%son'</span><span class="p">;</span>
+</code></pre>
+<h4>COUNT</h4>
+<pre class="highlight sql"><span class="highlight-copy-clipboard hint--left hint--rounded hint--no-animate" data-hint="Copy Code"></span><code><span class="k">SELECT</span> <span class="k">COUNT</span><span class="p">(</span><span class="o">*</span><span class="p">)</span>
+<span class="err">&nbsp;</span> <span class="err">&nbsp;</span> <span class="err">&nbsp;</span> <span class="err">&nbsp;</span> <span class="k">FROM</span> <span class="n">students</span>
+<span class="err">&nbsp;</span> <span class="err">&nbsp;</span> <span class="err">&nbsp;</span> <span class="err">&nbsp;</span> <span class="k">WHERE</span> <span class="n">status</span> <span class="o">=</span> <span class="s1">'Active'</span><span class="p">;</span>
+</code></pre>
+<h4>COLUMN ALIASES</h4>
+<pre class="highlight sql"><span class="highlight-copy-clipboard hint--left hint--rounded hint--no-animate" data-hint="Copy Code"></span><code><span class="k">SELECT</span> <span class="n">last_name</span><span class="p">,</span><span class="n">first_name</span> <span class="k">AS</span> <span class="k">first</span>
+<span class="err">&nbsp;</span> <span class="err">&nbsp;</span> <span class="err">&nbsp;</span> <span class="err">&nbsp;</span> <span class="k">FROM</span> <span class="n">students</span><span class="p">;</span>
+</code></pre>
+<h4>TABLE ALIASES</h4>
+<pre class="highlight sql"><span class="highlight-copy-clipboard hint--left hint--rounded hint--no-animate" data-hint="Copy Code"></span><code><span class="k">SELECT</span> <span class="n">last_name</span><span class="p">,</span> <span class="n">points</span>
+<span class="err">&nbsp;</span> <span class="err">&nbsp;</span> <span class="err">&nbsp;</span> <span class="err">&nbsp;</span> <span class="k">FROM</span> <span class="n">students</span> <span class="n">S</span><span class="p">,</span> <span class="n">assignments</span> <span class="n">A</span><span class="err">&nbsp;</span>
+<span class="err">&nbsp;</span> <span class="err">&nbsp;</span> <span class="err">&nbsp;</span> <span class="err">&nbsp;</span> <span class="k">WHERE</span> <span class="n">S</span><span class="p">.</span><span class="n">student_id</span> <span class="o">=</span> <span class="n">A</span><span class="p">.</span><span class="n">student_id</span> <span class="k">AND</span><span class="err">&nbsp;</span>
+<span class="err">&nbsp;</span> <span class="err">&nbsp;</span> <span class="err">&nbsp;</span> <span class="err">&nbsp;</span> <span class="n">A</span><span class="p">.</span><span class="n">assignment_id</span> <span class="o">=</span> <span class="mi">12</span><span class="p">;</span>
+</code></pre>
+<h4>DELETE</h4>
+<pre class="highlight sql"><span class="highlight-copy-clipboard hint--left hint--rounded hint--no-animate" data-hint="Copy Code"></span><code><span class="k">DELETE</span> <span class="k">FROM</span> <span class="n">students</span><span class="err">&nbsp;</span>
+<span class="err">&nbsp;</span> <span class="err">&nbsp;</span> <span class="err">&nbsp;</span> <span class="err">&nbsp;</span> <span class="k">WHERE</span> <span class="n">last_name</span> <span class="o">=</span> <span class="s1">'Smith'</span><span class="p">;</span>
+</code></pre>
+<h4>CREATE TABLE</h4>
+<pre class="highlight sql"><span class="highlight-copy-clipboard hint--left hint--rounded hint--no-animate" data-hint="Copy Code"></span><code><span class="k">CREATE</span> <span class="k">TABLE</span> <span class="n">books</span> <span class="p">(</span>
+  <span class="n">id</span>              <span class="n">SERIAL</span> <span class="k">PRIMARY</span> <span class="k">KEY</span><span class="p">,</span>
+  <span class="n">title</span>           <span class="n">VARCHAR</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span> <span class="k">NOT</span> <span class="k">NULL</span><span class="p">,</span>
+  <span class="n">primary_author</span>  <span class="n">VARCHAR</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span> <span class="k">NULL</span>
+<span class="p">);</span>
+</code></pre>
+<h4>DELETE TABLE</h4>
+<pre class="highlight sql"><span class="highlight-copy-clipboard hint--left hint--rounded hint--no-animate" data-hint="Copy Code"></span><code><span class="k">DROP</span> <span class="k">TABLE</span> <span class="n">students</span><span class="p">;</span>
+</code></pre>
+<h4>TRUNK TABLE</h4>
+<pre class="highlight sql"><span class="highlight-copy-clipboard hint--left hint--rounded hint--no-animate" data-hint="Copy Code"></span><code><span class="k">TRUNCATE</span> <span class="k">TABLE</span> <span class="n">students</span><span class="p">;</span>
+</code></pre>
+<h4>INSERT COLUMN</h4>
+<pre class="highlight sql"><span class="highlight-copy-clipboard hint--left hint--rounded hint--no-animate" data-hint="Copy Code"></span><code><span class="k">ALTER</span> <span class="k">TABLE</span> <span class="n">students</span><span class="err">&nbsp;</span>
+<span class="err">&nbsp;</span> <span class="err">&nbsp;</span> <span class="err">&nbsp;</span> <span class="err">&nbsp;</span> <span class="k">ADD</span> <span class="k">COLUMN</span> <span class="n">hometown</span> <span class="n">varchar</span><span class="p">(</span><span class="mi">20</span><span class="p">);</span>
+</code></pre>
+<h4>DELETE COLUMN</h4>
+<pre class="highlight sql"><span class="highlight-copy-clipboard hint--left hint--rounded hint--no-animate" data-hint="Copy Code"></span><code><span class="k">ALTER</span> <span class="k">TABLE</span> <span class="n">students</span><span class="err">&nbsp;</span>
+<span class="err">&nbsp;</span> <span class="err">&nbsp;</span> <span class="err">&nbsp;</span> <span class="err">&nbsp;</span> <span class="k">DROP</span> <span class="k">COLUMN</span> <span class="n">hometown</span><span class="p">;</span>
+</code></pre>
+      </article>
+    </div>
+  </div>
+
+    <div class="m-lessoncomplete">
+  <a class="m-lessoncomplete-btn" data-toggle-completion="" data-state="completed" data-completed="Mark As Complete" data-not-completed="Mark As Not Completed" data-remote="true" rel="nofollow" data-method="put" href="https://newline.theironyard.com/units/3919/lessons/15885/toggle_completion">Mark As Complete</a>
+</div>
+
+  <div class="box center p4 mt1">
+    <p class="color-grey">Hooray! You're all caught up on this path. Head back to your Dashboard to check for new content or work on another path.</p>
+    <a href="https://newline.theironyard.com/">‹ Back to Dashboard</a>
+  </div>
+
+
+</div>
+
+
+
+
+      </section>
+        <footer class="l-footer">
+          <div class="max-width-4 mx-auto px2">
+  © Copyright 2015-2017 - The Iron Yard
+</div>
+
+        </footer>
+    </div>
+
+
+  <div class="l-navigator">
+    <div class="l-navigator-togglebtn s-navigator-togglebtn-active" data-navigator-toggledrawer="" style="top: 182px;">
+      <svg width="21px" height="17px" viewBox="577 873 21 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(577.000000, 873.000000)">
+        <rect fill="#1E2F37" x="2" y="0" width="15" height="3" rx="1"></rect>
+        <rect fill="#1E2F37" x="6" y="7" width="15" height="3" rx="1"></rect>
+        <path d="M2,14.9989566 C2,14.4472481 2.44892021,14 3.00748397,14 L15.992516,14 C16.5489341,14 17,14.4426603 17,14.9989566 L17,16.0010434 C17,16.5527519 16.5510798,17 15.992516,17 L3.00748397,17 C2.45106594,17 2,16.5573397 2,16.0010434 L2,14.9989566 Z" fill="#1E2F37"></path>
+        <path d="M0.749858012,11.7939616 C0.335722868,12.1664191 0,12.0180911 0,11.4613491 L0,5.52430798 C0,4.96815365 0.332247299,4.81611215 0.749858012,5.19169545 L3.67052671,7.81843456 C4.08466185,8.19089207 4.08813742,8.7916392 3.67052671,9.16722251 L0.749858012,11.7939616 Z" fill="#1E2F37"></path>
+    </g>
+</svg>
+
+      <span class="l-navigator-togglebtn-label">Navigate Path</span>
+    </div>
+    <div class="l-navigator-drawer">
+      <div class="l-navigator-drawer-parent" title="Backend Engineering (Ruby on Rails) - September 2016">
+        <div class="l-navigator-drawer-parent-type">Path</div>
+        <div class="l-navigator-drawer-parent-title">Backend Engineering (Ruby on Rails) - September 2016</div>
+      </div>
+        <div class="l-navigator-drawer-unit ">
+          <div class="l-navigator-drawer-unit-title" title="Week 1: HTML &amp; CSS" data-navigator-toggleunit="">
+            <svg width="14px" height="15px" viewBox="-9 572 14 15" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs></defs>
